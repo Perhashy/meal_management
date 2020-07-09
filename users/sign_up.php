@@ -8,8 +8,7 @@
   </head>
 
   <body>
-    <p>トップページです</p>
-    <a href="users/login.php">ログイン</a>
-    <a href="users/sign_up.php">新規登録ページ</a>
+    <p>新規登録ページ</p>
+    <a href="check.php">確認ページ</a>
   </body>
 </html>
