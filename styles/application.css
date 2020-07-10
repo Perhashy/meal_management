@@ -160,7 +160,7 @@ legend {
 }
 
 .wrapper .form {
-  width: 500px;
+  width: 600px;
   padding: 30px;
   margin: 24px auto 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));
@@ -169,7 +169,7 @@ legend {
 
 .wrapper .form .message {
   font-size: 18px;
-  color: gray;
+  color: #696969;
 }
 
 .wrapper .form-box {
@@ -180,6 +180,10 @@ legend {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
+}
+
+.wrapper .form-box .content {
+  font-size: 18px;
 }
 
 .wrapper .form-box input {
@@ -207,11 +211,26 @@ legend {
 }
 
 .wrapper .form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .form .submit-btn {
   display: block;
   width: 144px;
   padding: 5px;
+  border-radius: 5px;
   margin: 10px auto 0;
   background-color: #87cefa;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.wrapper .form .submit .reedit {
+  text-decoration: none;
+  text-align: center;
+  background-color: tomato;
+  color: #000;
 }
 /*# sourceMappingURL=application.css.map */
