@@ -160,15 +160,16 @@ legend {
 }
 
 .wrapper .form {
-  width: 600px;
+  width: 660px;
+  height: 500px;
   padding: 30px;
   margin: 24px auto 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));
   background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));
 }
 
-.wrapper .form .message {
-  font-size: 18px;
+.wrapper .form-message {
+  font-size: 20px;
   color: #696969;
 }
 
@@ -222,15 +223,16 @@ legend {
   padding: 5px;
   border-radius: 5px;
   margin: 10px auto 0;
+  border: 1px solid gray;
   background-color: #87cefa;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
 }
 
 .wrapper .form .submit .reedit {
-  text-decoration: none;
-  text-align: center;
   background-color: tomato;
-  color: #000;
 }
 /*# sourceMappingURL=application.css.map */
