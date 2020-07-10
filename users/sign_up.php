@@ -15,7 +15,7 @@
       <div class="form">
         <p class="message">次のフォームに必要事項をご記入ください</p>
         <div class="form-box">
-          <p class="title">【ニックネーム】</p>
+          <p class="title">・ニックネーム</p>
           <p class="must">必須</p>
           <div class="input">
             <input type="text">
@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="form-box">
-          <p class="title">【メールアドレス】</p>
+          <p class="title">・メールアドレス</p>
           <p class="must">必須</p>
           <div class="input">
             <input type="text">
@@ -31,14 +31,16 @@
           </div>
         </div>
         <div class="form-box">
-          <p class="title">【パスワード】</p>
+          <p class="title">・パスワード</p>
           <p class="must">必須</p>
           <div class="input">
             <input type="text">
             <p class="error">※パスワードを入力してください</p>
           </div>
         </div>
-        <input type="submit" class="submit">
+        <div class="submit">
+          <input type="submit" class="submit-btn" value="入力内容を確認">
+        </div>
         <a href="check.php">確認ページ</a>
       </div>
     </div>
