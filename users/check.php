@@ -13,7 +13,7 @@
         <h1>会員登録</h1>
       </div>
       <div class="form">
-        <p class="form-message">記入した内容を確認して、「登録」ボタンをクリックしてください</p>
+        <p class="form-message">記入した内容を確認して、「登録する」をクリックしてください</p>
         <div class="form-box">
           <p class="title">・ニックネーム</p>
           <p class="content">名前</p>
@@ -28,7 +28,7 @@
         </div>
         <div class="submit">
           <a href="sign_up.php" class="submit-btn reedit">« 書き直す</a>
-          <input type="submit" class="submit-btn" value="登録">
+          <input type="submit" class="submit-btn" value="登録する">
         </div>
         <a href="thanks.php">完了</a>
       </div>

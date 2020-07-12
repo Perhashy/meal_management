@@ -226,21 +226,24 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapper .form .submit-btn {
   display: block;
-  width: 144px;
-  padding: 5px;
+  padding: 5px 20px;
   border-radius: 5px;
-  margin: 10px auto 0;
   border: 1px solid gray;
-  background-color: #87cefa;
+  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   color: #000;
+  background-color: #87cefa;
+  margin-left: 10px;
 }
 
 .wrapper .form .submit .reedit {
