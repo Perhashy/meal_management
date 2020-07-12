@@ -9,20 +9,23 @@
 
   <body>
     <div class="wrapper">
+      <div class="background">
+        <!-- 背景画像予定 -->
+      </div>
       <div class="header">
         <h1>ロゴ画像</h1>
       </div>
-    </div>
-    <div class="container">
-      <div class="introduction">
-        <p>このサイトは食事管理アプリ（仮）です。</p>
-        <p>
-          簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。
-        </p>
-      </div>
-      <div class="link">
-        <a href="users/login.php">ログイン</a>
-        <a href="users/sign_up.php">新規登録ページ</a>
+      <div class="container">
+        <div class="introduction">
+          <p class="introduction-title">このサイトは食事管理アプリ（仮）です。</p>
+          <p class="introduction-message">
+            簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。簡単な説明。
+          </p>
+        </div>
+        <div class="link">
+          <a href="users/login.php" class="login">ログイン</a>
+          <a href="users/sign_up.php" class="signup">ユーザー登録ページ</a>
+        </div>
       </div>
     </div>
   </body>
