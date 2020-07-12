@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>会員登録</title>
-    <link rel="stylesheet" href="../styles/application.css">
+    <link rel="stylesheet" href="../styles/users/users.css">
   </head>
 
   <body>
