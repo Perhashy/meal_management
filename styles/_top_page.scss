@@ -1,0 +1,44 @@
+.wrapper{
+  .header{
+    width: 100vw;
+    height: 100px;
+    background-color: #87cefa;
+    h1{
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 100px;
+      margin-left: 30px;
+    }
+  }
+  .container{
+    width: 1140px;
+    height: 530px;
+    padding: 48px 60px;
+    margin: 0 auto;
+    text-align: center;
+    .introduction{
+      &-title{
+        font-size: 50px;
+      }
+      &-message{
+        font-size: 24px;
+        margin-top: 40px;
+      }
+    }
+    .link{
+      margin-top: 36px;
+      display: flex;
+      justify-content: center;
+      a{
+        @include submit();
+      }
+      .login{
+        background-color: #87cefa;
+      }
+      .signup{
+        margin-left: 10px;
+        background-color: orange;
+      }
+    }
+  }
+}

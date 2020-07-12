@@ -1,0 +1,81 @@
+@import "../mixins";
+@import "../reset";
+
+.wrapper{
+  .header{
+    width: 100vw;
+    height: 100px;
+    background-color: #87cefa;
+    h1{
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 100px;
+      margin-left: 30px;
+    }
+  }
+  .form{
+    width: 660px;
+    height: 500px;
+    padding: 30px;
+    margin: 24px auto 0;
+    background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));
+    &-message{
+      font-size: 20px;
+      color: #696969;
+    }
+    &-box{
+      margin-top: 10px;
+      .title{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .content{
+        font-size: 18px;
+      }
+      .must{
+        height: 25px;
+        display: inline-block;
+        background-color: red;
+        color: #fff;
+        padding: 2px;
+        border-radius: 5px;
+        line-height: 23px;
+      }
+      .input{
+        input{
+          display: block;
+          width: 100%;
+          height: 36px;
+          border: 1px solid gray;
+          border-radius: 5px;
+          margin-top: 10px;
+        }
+        .error{
+          color: red;
+          font-weight: bold;
+        }
+      }
+      .checkbox{
+        display: flex;
+        margin-top: 10px;
+        &-message{
+          font-size: 18px;
+        }
+      }
+    }
+    .submit{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      &-btn{
+        @include submit();
+        background-color: #87cefa;
+        margin-left: 10px;
+      }
+      .reedit{
+        background-color: tomato;
+      }
+    }
+  }
+}

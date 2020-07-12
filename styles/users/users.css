@@ -1,1 +1,253 @@
-/* No CSS *//*# sourceMappingURL=users.css.map */
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+    TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+    TODO test putting a class on HEAD.
+        - Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+    TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wrapper .header {
+  width: 100vw;
+  height: 100px;
+  background-color: #87cefa;
+}
+
+.wrapper .header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100px;
+  margin-left: 30px;
+}
+
+.wrapper .form {
+  width: 660px;
+  height: 500px;
+  padding: 30px;
+  margin: 24px auto 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));
+  background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));
+}
+
+.wrapper .form-message {
+  font-size: 20px;
+  color: #696969;
+}
+
+.wrapper .form-box {
+  margin-top: 10px;
+}
+
+.wrapper .form-box .title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper .form-box .content {
+  font-size: 18px;
+}
+
+.wrapper .form-box .must {
+  height: 25px;
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  line-height: 23px;
+}
+
+.wrapper .form-box .input input {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.wrapper .form-box .input .error {
+  color: red;
+  font-weight: bold;
+}
+
+.wrapper .form-box .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.wrapper .form-box .checkbox-message {
+  font-size: 18px;
+}
+
+.wrapper .form .submit {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .form .submit-btn {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  background-color: #87cefa;
+  margin-left: 10px;
+}
+
+.wrapper .form .submit .reedit {
+  background-color: tomato;
+}
+/*# sourceMappingURL=users.css.map */

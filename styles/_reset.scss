@@ -11,8 +11,7 @@
 html {
   color: #000;
   background: #FFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
@@ -144,67 +143,6 @@ legend {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
-.wrapper .header {
-  width: 100vw;
-  height: 100px;
-  background-color: #87cefa;
-}
-
-.wrapper .header h1 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 100px;
-  margin-left: 30px;
-}
-
-.wrapper .container {
-  width: 1140px;
-  height: 530px;
-  padding: 48px 60px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.wrapper .container .introduction-title {
-  font-size: 50px;
-}
-
-.wrapper .container .introduction-message {
-  font-size: 24px;
-  margin-top: 40px;
-}
-
-.wrapper .container .link {
-  margin-top: 36px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.wrapper .container .link a {
-  display: block;
-  padding: 5px 20px;
-  border-radius: 5px;
-  border: 1px solid gray;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
-}
-
-.wrapper .container .link .login {
-  background-color: #87cefa;
-}
-
-.wrapper .container .link .signup {
-  margin-left: 10px;
-  background-color: orange;
-}
-/*# sourceMappingURL=application.css.map */
+/*# sourceMappingURL=reset.css.map */

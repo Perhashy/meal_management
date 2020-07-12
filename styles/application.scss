@@ -1,5 +1,6 @@
-@import "index.scss";
-@import "top_page.scss";
-@import "users/users.scss";
-@import "contents/new.scss";
-@import "contents/delete.scss";
+@import "mixins";
+@import "reset";
+@import "index";
+@import "top_page";
+@import "contents/new";
+@import "contents/delete";
