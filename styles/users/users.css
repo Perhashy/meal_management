@@ -223,6 +223,7 @@ legend {
 }
 
 .wrapper .form .submit {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
