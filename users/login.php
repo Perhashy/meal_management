@@ -14,8 +14,8 @@
       </div>
       <div class="form">
         <p class="form-message">メールアドレスとパスワードを入力してログインしてください</p>
-        <p class="form-message">会員登録がまだの方はこちらからどうぞ➡︎
-          <a href="sign_up.php">会員登録</a>
+        <p class="form-message">ユーザー登録がまだの方はこちらからどうぞ➡︎
+          <a href="sign_up.php">ユーザー登録</a>
         </p>
         <div class="form-box">
           <p class="title">・メールアドレス</p>
