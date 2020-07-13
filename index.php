@@ -16,7 +16,7 @@
       <div class="contents">
         <div class="contents-main">
           <h2 class="title">〇/〇の摂取カロリー</h2>
-          <p class="total">〇〇 kcal</p>
+          <p class="total">1,700 kcal</p>
         </div>
 
         <div class="contents-list">
@@ -44,12 +44,12 @@
               <td><a href="contents/delete.php">削除</a></td>
             </tr>
             <tr>
-              <td>アーモンド 100g</td>
-              <td>660</td>
-              <td>18.9</td>
-              <td>56.4</td>
-              <td>19.1</td>
-              <td>0.0</td>
+              <td>チョコレート 100g</td>
+              <td>618</td>
+              <td>9.7</td>
+              <td>46.1</td>
+              <td>41.0</td>
+              <td>0.01</td>
               <td><a href="contents/edit.php">編集ページ</a></td>
               <td><a href="contents/delete.php">削除</a></td>
             </tr>

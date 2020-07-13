@@ -159,6 +159,32 @@ legend {
   display: block;
 }
 
+.wrapper .contents {
+  padding: 36px 0;
+}
+
+.wrapper .contents-main {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .contents-main .title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.wrapper .contents-main .total {
+  width: 220px;
+  height: 200px;
+  font-size: 32px;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 200px;
+}
+
 .wrapper .header {
   width: 100vw;
   height: 100px;
