@@ -146,6 +146,10 @@ legend {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
 .wrapper .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +187,52 @@ legend {
   border-radius: 50%;
   margin: 0 auto;
   line-height: 200px;
+}
+
+.wrapper .contents-list {
+  margin-top: 36px;
+}
+
+.wrapper .contents-list .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper .contents-list .title a {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+  background-color: #87cefa;
+}
+
+.wrapper .contents-list table {
+  margin: 16px auto 0;
+}
+
+.wrapper .contents-list table th {
+  padding: 5px;
+}
+
+.wrapper .contents-list table td {
+  padding: 5px;
+}
+
+.wrapper .contents-list table td .edit {
+  color: blue;
+}
+
+.wrapper .contents-list table td .delete {
+  color: red;
 }
 
 .wrapper .header {

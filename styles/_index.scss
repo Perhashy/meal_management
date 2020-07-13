@@ -1,3 +1,6 @@
+a{
+  text-decoration: none;
+}
 .wrapper{
   .header{
     display: flex;
@@ -25,6 +28,35 @@
         border-radius: 50%;
         margin: 0 auto;
         line-height: 200px;
+      }
+    }
+    &-list{
+      margin-top: 36px;
+      .title{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        a{
+          @include submit();
+          display: inline-block;
+          font-size: 18px;
+          background-color: #87cefa;
+        }
+      }
+      table{
+        margin: 16px auto 0;
+        th{
+          padding: 5px;
+        }
+        td{
+          padding: 5px;
+          .edit{
+            color: blue;
+          }
+          .delete{
+            color: red;
+          }
+        }
       }
     }
   }

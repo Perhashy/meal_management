@@ -20,8 +20,9 @@
         </div>
 
         <div class="contents-list">
-          <h2 class="title">食べたものリスト</h2>
-          <a href="contents/new.php">新規投稿ページ</a>
+          <h2 class="title">食べたものリスト
+            <a href="contents/new.php">新しく追加する</a>
+          </h2>
           <table border="1">
             <tr>
               <th>名前</th>
@@ -40,8 +41,8 @@
               <td>56.4</td>
               <td>19.1</td>
               <td>0.0</td>
-              <td><a href="contents/edit.php">編集ページ</a></td>
-              <td><a href="contents/delete.php">削除</a></td>
+              <td><a href="contents/edit.php" class="edit">編集</a></td>
+              <td><a href="contents/delete.php" class="delete">削除</a></td>
             </tr>
             <tr>
               <td>チョコレート 100g</td>
@@ -50,8 +51,8 @@
               <td>46.1</td>
               <td>41.0</td>
               <td>0.01</td>
-              <td><a href="contents/edit.php">編集ページ</a></td>
-              <td><a href="contents/delete.php">削除</a></td>
+              <td><a href="contents/edit.php" class="edit">編集</a></td>
+              <td><a href="contents/delete.php" class="delete">削除</a></td>
             </tr>
           </table>
         </div>
