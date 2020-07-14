@@ -20,7 +20,7 @@
         </div>
 
         <div class="contents-list">
-          <h2 class="title">食べたものリスト
+          <h2 class="title"><食べたものリスト>
             <a href="contents/new.php">新しく追加する</a>
           </h2>
           <table border="1">
@@ -58,22 +58,24 @@
         </div>
 
         <div class="contents-each">
-          <h2>各合計</h2>
-          <div class="content">
-            <h2 class="title">たんぱく質</h2>
-            <p class="total">〇〇 g</p>
-          </div>
-          <div class="content">
-            <h2 class="title">脂質</h2>
-            <p class="total">〇〇 g</p>
-          </div>
-          <div class="content">
-            <h2 class="title">炭水化物</h2>
-            <p class="total">〇〇 g</p>
-          </div>
-          <div class="content">
-            <h2 class="title">食塩相当量</h2>
-            <p class="total">〇〇 g</p>
+          <h2 class="contents-each-title"><各合計></h2>
+          <div class="contents-each-box">
+            <div class="content">
+              <h2 class="content-title"><たんぱく質></h2>
+              <p class="content-total">123.4 g</p>
+            </div>
+            <div class="content">
+              <h2 class="content-title"><脂質></h2>
+              <p class="content-total">100.6 g</p>
+            </div>
+            <div class="content">
+              <h2 class="content-title"><炭水化物></h2>
+              <p class="content-total">123.4 g</p>
+            </div>
+            <div class="content">
+              <h2 class="content-title"><食塩相当量></h2>
+              <p class="content-total">34.05 g</p>
+            </div>
           </div>
         </div>
       </div>
