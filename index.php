@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>食事管理アプリ（仮</title>
     <link rel="stylesheet" href="styles/application.css">
   </head>
 
   <body>
     <div class="wrapper">
       <div class="header">
-        <h1>ユーザーページ</h1>
+        <h1>食事管理アプリ（仮</h1>
         <a href="users/logout.php">ログアウト</a>
       </div>
       <div class="contents">

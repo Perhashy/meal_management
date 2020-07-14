@@ -338,4 +338,17 @@ a {
   margin-left: 10px;
   background-color: orange;
 }
+
+.wrapper .header {
+  width: 100vw;
+  height: 100px;
+  background-color: #87cefa;
+}
+
+.wrapper .header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100px;
+  margin-left: 30px;
+}
 /*# sourceMappingURL=application.css.map */
