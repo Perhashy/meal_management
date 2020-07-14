@@ -146,6 +146,137 @@ legend {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
+.wrapper .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .header a {
+  display: block;
+}
+
+.wrapper .contents {
+  padding: 36px 0;
+}
+
+.wrapper .contents-main {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .contents-main .title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.wrapper .contents-main .total {
+  width: 220px;
+  height: 200px;
+  font-size: 32px;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 200px;
+}
+
+.wrapper .contents-list {
+  margin-top: 36px;
+}
+
+.wrapper .contents-list .title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper .contents-list .title a {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+  background-color: #87cefa;
+}
+
+.wrapper .contents-list table {
+  margin: 16px auto 0;
+}
+
+.wrapper .contents-list table th {
+  padding: 5px;
+}
+
+.wrapper .contents-list table td {
+  padding: 5px;
+}
+
+.wrapper .contents-list table td .edit {
+  color: blue;
+}
+
+.wrapper .contents-list table td .delete {
+  color: red;
+}
+
+.wrapper .contents-each {
+  margin-top: 36px;
+}
+
+.wrapper .contents-each-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper .contents-each-box {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.wrapper .contents-each-box .content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper .contents-each-box .content-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.wrapper .contents-each-box .content-total {
+  width: 160px;
+  height: 160px;
+  font-size: 28px;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 160px;
+}
+
 .wrapper .header {
   width: 100vw;
   height: 100px;
@@ -206,5 +337,71 @@ legend {
 .wrapper .container .link .signup {
   margin-left: 10px;
   background-color: orange;
+}
+
+.wrapper .form {
+  width: 660px;
+  padding: 30px;
+  margin: 24px auto 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));
+  background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));
+}
+
+.wrapper .form h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper .form-title {
+  margin-top: 16px;
+}
+
+.wrapper .form-title h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper .form-title-input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.wrapper .form-box {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .form-box-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper .form-box-input {
+  width: 160px;
+}
+
+.wrapper .form-box .unit {
+  margin-left: 5px;
+}
+
+.wrapper .form .submit {
+  margin-top: 20px;
+}
+
+.wrapper .form .submit-btn {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  background-color: #87cefa;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=application.css.map */
