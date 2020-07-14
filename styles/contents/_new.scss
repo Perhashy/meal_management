@@ -1,0 +1,45 @@
+.wrapper{
+  .form{
+    width: 660px;
+    padding: 30px;
+    margin: 24px auto 0;
+    background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));
+    h1{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &-title{
+      margin-top: 16px;
+      h2{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &-input{
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+    &-box{
+      margin-top: 16px;
+      display: flex;
+      &-label{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &-input{
+        width: 160px;
+      }
+      .unit{
+        margin-left: 5px;
+      }
+    }
+    .submit{
+      margin-top: 20px;
+      &-btn{
+        @include submit();
+        background-color: #87cefa;
+        margin: 0 auto;
+      }
+    }
+  }
+}

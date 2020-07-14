@@ -339,16 +339,69 @@ a {
   background-color: orange;
 }
 
-.wrapper .header {
-  width: 100vw;
-  height: 100px;
-  background-color: #87cefa;
+.wrapper .form {
+  width: 660px;
+  padding: 30px;
+  margin: 24px auto 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));
+  background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));
 }
 
-.wrapper .header h1 {
-  font-size: 36px;
+.wrapper .form h1 {
+  font-size: 20px;
   font-weight: bold;
-  line-height: 100px;
-  margin-left: 30px;
+}
+
+.wrapper .form-title {
+  margin-top: 16px;
+}
+
+.wrapper .form-title h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper .form-title-input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.wrapper .form-box {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .form-box-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper .form-box-input {
+  width: 160px;
+}
+
+.wrapper .form-box .unit {
+  margin-left: 5px;
+}
+
+.wrapper .form .submit {
+  margin-top: 20px;
+}
+
+.wrapper .form .submit-btn {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  background-color: #87cefa;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=application.css.map */
