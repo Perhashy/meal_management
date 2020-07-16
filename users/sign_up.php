@@ -20,6 +20,10 @@ if (!empty($_POST)) {
     exit();
   }
 }
+
+if ($_REQUEST['action'] === 'rewrite' && isset($_SESSION['user'])) {
+  $_POST = $_SESSION['user'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +79,6 @@ if (!empty($_POST)) {
             <input type="submit" class="submit-btn" value="入力内容を確認">
           </div>
         </form>
-        <a href="check.php">確認ページ</a>
       </div>
     </div>
   </body>
