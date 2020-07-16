@@ -1,3 +1,12 @@
+<?php
+require_once('../config/config.php');
+
+if (!isset($_SESSION['user'])) {
+  header('Location: sign_up.php');
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -16,11 +25,11 @@
         <p class="form-message">記入した内容を確認して、「登録する」をクリックしてください</p>
         <div class="form-box">
           <p class="title">・ニックネーム</p>
-          <p class="content">名前</p>
+          <p class="content"><?= h($_SESSION['user']['name']);?></p>
         </div>
         <div class="form-box">
           <p class="title">・メールアドレス</p>
-          <p class="content">メアド</p>
+          <p class="content"><?= h($_SESSION['user']['email']);?></p>
         </div>
         <div class="form-box">
           <p class="title">・パスワード</p>

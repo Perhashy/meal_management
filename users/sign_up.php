@@ -15,6 +15,7 @@ if (!empty($_POST)) {
     $error['password'] = 'blank';
   }
   if (empty($error)) {
+    $_SESSION['user'] = $_POST;
     header('Location: check.php');
     exit();
   }
