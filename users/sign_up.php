@@ -1,5 +1,6 @@
 <?php
 require_once('../config/config.php');
+require_once('../config/dbconnect.php');
 
 if (!empty($_POST)) {
   if ($_POST['name'] === '') {
@@ -14,6 +15,16 @@ if (!empty($_POST)) {
   if ($_POST['password'] === '') {
     $error['password'] = 'blank';
   }
+
+  if (empty($error)) {
+    $user = $db->prepare('SELECT COUNT(*) AS cnt FROM users WHERE email=?');
+    $user->execute(array($_POST['email']));
+    $record = $user->fetch();
+    if ($record['cnt'] > 0) {
+      $error['email'] = 'duplicate';
+    }
+  }
+
   if (empty($error)) {
     $_SESSION['user'] = $_POST;
     header('Location: check.php');
@@ -60,6 +71,9 @@ if ($_REQUEST['action'] === 'rewrite' && isset($_SESSION['user'])) {
               <input type="text" name="email" value="<?= h($_POST['email']);?>">
               <?php if ($error['email'] === 'blank'): ?>
                 <p class="error">※メールアドレスを入力してください</p>
+              <?php endif; ?>
+              <?php if ($error['email'] === 'duplicate'): ?>
+                <p class="error">※指定されたメールアドレスは、既に登録されています</p>
               <?php endif; ?>
             </div>
           </div>
