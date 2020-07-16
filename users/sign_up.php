@@ -15,6 +15,9 @@ if (!empty($_POST)) {
   if ($_POST['password'] === '') {
     $error['password'] = 'blank';
   }
+  if ($_POST['age'] === '') {
+    $error['age'] = 'blank';
+  }
 
   if (empty($error)) {
     $user = $db->prepare('SELECT COUNT(*) AS cnt FROM users WHERE email=?');
@@ -86,6 +89,23 @@ if ($_REQUEST['action'] === 'rewrite' && isset($_SESSION['user'])) {
                 <p class="error">※パスワードを入力してください</p>
               <?php elseif ($error['password'] === 'length'): ?>
                 <p class="error">※パスワードは7文字以上で入力してください</p>
+              <?php endif; ?>
+            </div>
+          </div>
+          <div class="form-box">
+            <p class="title">・年齢</p>
+            <p class="must">必須</p>
+            <div class="input">
+              <select name="age">
+                <option value="<?= h($_POST['age']);?>"><?= h($_POST['age']);?></option>
+                <?php $i = 0; ?>
+                <?php while($i <= 100):?>
+                  <option value="<?php print($i)?>"><?php print($i)?></option>
+                  <?php $i += 1; ?>
+                <?php endwhile;?>
+              </select>
+              <?php if ($error['age'] === 'blank'): ?>
+                <p class="error">※年齢を入力してください</p>
               <?php endif; ?>
             </div>
           </div>

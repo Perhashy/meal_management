@@ -8,11 +8,12 @@ if (!isset($_SESSION['user'])) {
 }
 
 if (!empty($_POST)) {
-  $statement = $db->prepare('INSERT INTO users SET name=?, email=?, password=?, created=NOW()');
+  $statement = $db->prepare('INSERT INTO users SET name=?, email=?, password=?, age=?, created=NOW()');
   $statement->execute(array(
     $_SESSION['user']['name'],
     $_SESSION['user']['email'],
-    sha1($_SESSION['user']['password'])
+    sha1($_SESSION['user']['password']),
+    $_SESSION['user']['age']
   ));
   unset($_SESSION['user']);
 
@@ -50,6 +51,10 @@ if (!empty($_POST)) {
           <div class="form-box">
             <p class="title">・パスワード</p>
             <p class="content">【表示されません】</p>
+          </div>
+          <div class="form-box">
+            <p class="title">・年齢</p>
+            <p class="content"><?= h($_SESSION['user']['age']);?></p>
           </div>
           <div class="submit">
             <a href="sign_up.php?action=rewrite" class="submit-btn reedit">« 書き直す</a>
