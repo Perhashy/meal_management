@@ -7,6 +7,9 @@ if ($_POST['name'] === '') {
 if ($_POST['email'] === '') {
   $error['email'] = 'blank';
 }
+if (strlen($_POST['password']) < 7) {
+  $error['password'] = 'length';
+}
 if ($_POST['password'] === '') {
   $error['password'] = 'blank';
 }
@@ -56,6 +59,8 @@ if ($_POST['password'] === '') {
               <input type="password" name="password" value="<?= h($_POST['password']);?>">
               <?php if ($error['password'] === 'blank'): ?>
                 <p class="error">※パスワードを入力してください</p>
+              <?php elseif ($error['password'] === 'length'): ?>
+                <p class="error">※パスワードは7文字以上で入力してください</p>
               <?php endif; ?>
             </div>
           </div>
