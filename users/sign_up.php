@@ -1,17 +1,23 @@
 <?php
 require_once('../config/config.php');
 
-if ($_POST['name'] === '') {
-  $error['name'] = 'blank';
-}
-if ($_POST['email'] === '') {
-  $error['email'] = 'blank';
-}
-if (strlen($_POST['password']) < 7) {
-  $error['password'] = 'length';
-}
-if ($_POST['password'] === '') {
-  $error['password'] = 'blank';
+if (!empty($_POST)) {
+  if ($_POST['name'] === '') {
+    $error['name'] = 'blank';
+  }
+  if ($_POST['email'] === '') {
+    $error['email'] = 'blank';
+  }
+  if (strlen($_POST['password']) < 7) {
+    $error['password'] = 'length';
+  }
+  if ($_POST['password'] === '') {
+    $error['password'] = 'blank';
+  }
+  if (empty($error)) {
+    header('Location: check.php');
+    exit();
+  }
 }
 ?>
 
