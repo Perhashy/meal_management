@@ -2,13 +2,12 @@
 require_once('../config/config.php');
 require_once('../config/dbconnect.php');
 
+if ($_COOKIE['email'] !== '') {
+  $email =$_COOKIE['email'];
+}
+
 if (!empty($_POST)) {
-  if ($_POST['email'] === '') {
-    $error['email'] = 'blank';
-  }
-  if ($_POST['password'] === '') {
-    $error['password'] = 'blank';
-  }
+  $email = $_POST['email'];
   if ($_POST['email'] !== '' && $_POST['password'] !== '') {
     $login = $db->prepare('SELECT * FROM users WHERE email=? AND password=?');
     $login->execute(array(
@@ -20,6 +19,11 @@ if (!empty($_POST)) {
     if ($user) {
       $_SESSION['id'] = $user['id'];
       $_SESSION['time'] = time();
+
+      if ($_POST['save'] === 'on') {
+        setcookie('email', $_POST['email'], time() + 60 * 60 * 24 * 14);
+      }
+
       header('Location: ../index.php');
       exit();
     } else {
@@ -56,7 +60,7 @@ if (!empty($_POST)) {
           <div class="form-box">
             <p class="title">・メールアドレス</p>
             <div class="input">
-              <input type="text" name="email" value="<?= h($_POST['email']);?>">
+              <input type="text" name="email" value="<?= h($email);?>">
               <?php if ($error['email'] === 'blank'): ?>
                 <p class="error">※メールアドレスを入力してください</p>
               <?php endif; ?>
@@ -78,7 +82,7 @@ if (!empty($_POST)) {
             <p class="title">・ログイン情報の記録</p>
             <div class="checkbox">
               <label class="checkbox-message">
-                <input type="checkbox">
+                <input type="checkbox" name="save" value="on">
                 次回から自動的にログインする
               </label>
             </div>
@@ -87,7 +91,6 @@ if (!empty($_POST)) {
             <input type="submit" class="submit-btn" value="ログイン">
           </div>
         </form>
-        <a href="../index.php">ログイン</a>
       </div>
     </div>
   </body>
