@@ -60,7 +60,6 @@ if (!empty($_POST)) {
             <a href="sign_up.php?action=rewrite" class="submit-btn reedit">« 書き直す</a>
             <input type="submit" class="submit-btn" value="登録する">
           </div>
-          <a href="thanks.php">完了</a>
         </form>
       </div>
     </div>

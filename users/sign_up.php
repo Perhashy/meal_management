@@ -98,14 +98,12 @@ if ($_REQUEST['action'] === 'rewrite' && isset($_SESSION['user'])) {
             <div class="input">
               <select name="age">
                 <option value="<?= h($_POST['age']);?>"><?= h($_POST['age']);?></option>
-                <?php $i = 0; ?>
-                <?php while($i <= 100):?>
+                <?php for ($i = 0; $i <= 100; $i++):?>
                   <option value="<?php print($i)?>"><?php print($i)?></option>
-                  <?php $i += 1; ?>
-                <?php endwhile;?>
+                <?php endfor; ?>
               </select>
               <?php if ($error['age'] === 'blank'): ?>
-                <p class="error">※年齢を入力してください</p>
+                <p class="error">※年齢を選択してください</p>
               <?php endif; ?>
             </div>
           </div>
