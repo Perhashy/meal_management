@@ -9,6 +9,27 @@ if (!empty($_POST)) {
   if ($_POST['password'] === '') {
     $error['password'] = 'blank';
   }
+  if ($_POST['email'] !== '' && $_POST['password'] !== '') {
+    $login = $db->prepare('SELECT * FROM users WHERE email=? AND password=?');
+    $login->execute(array(
+      $_POST['email'],
+      sha1($_POST['password'])
+    ));
+    $user = $login->fetch();
+
+    if ($user) {
+      $_SESSION['id'] = $user['id'];
+      $_SESSION['time'] = time();
+      header('Location: ../index.php');
+      exit();
+    } else {
+      $error['login'] = 'failed';
+    }
+  } elseif ($_POST['email'] === '') {
+    $error['email'] = 'blank';
+  } elseif ($_POST['password'] === '') {
+    $error['password'] = 'blank';
+  }
 }
 ?>
 
@@ -38,6 +59,9 @@ if (!empty($_POST)) {
               <input type="text" name="email" value="<?= h($_POST['email']);?>">
               <?php if ($error['email'] === 'blank'): ?>
                 <p class="error">※メールアドレスを入力してください</p>
+              <?php endif; ?>
+              <?php if ($error['login'] === 'failed'): ?>
+                <p class="error">※ログインに失敗しました。正しくご記入してください</p>
               <?php endif; ?>
             </div>
           </div>
