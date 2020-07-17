@@ -1,3 +1,15 @@
+<?php
+
+require_once('config/config.php');
+require_once('config/dbconnect.php');
+
+if (!isset($_SESSION['id'])) {
+  header('Location: top_page.php');
+  exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
