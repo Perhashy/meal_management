@@ -68,7 +68,7 @@ if ($date === date('Y-m-d')) {
             </tr>
             <?php foreach ($posts as $post): ?>
               <tr>
-                <td><?= $post['name'];?></td>
+                <td><?= mb_substr($post['name'], 0 , 20);?></td>
                 <td><?= number_format($post['calorie']);?></td>
                 <td><?= number_format($post['protein'], 1);?></td>
                 <td><?= number_format($post['lipid'], 1);?></td>
