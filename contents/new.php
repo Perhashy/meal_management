@@ -66,27 +66,27 @@ if (!empty($_POST)) {
           </div>
           <div class="form-box">
             <h2 class="form-box-label">エネルギー：</h2>
-            <input type="text" class="form-box-input" name="calorie">
+            <input type="number" min="0" class="form-box-input" name="calorie">
             <p class="unit">kcal</p>
           </div>
           <div class="form-box">
             <h2 class="form-box-label">たんぱく質：</h2>
-            <input type="text" class="form-box-input" name="protein">
+            <input type="number" min="0" step="0.1" class="form-box-input" name="protein">
             <p class="unit">g</p>
           </div>
           <div class="form-box">
             <h2 class="form-box-label">脂質：　　　</h2>
-            <input type="text" class="form-box-input" name="lipid">
+            <input type="number" min="0" step="0.1" class="form-box-input" name="lipid">
             <p class="unit">g</p>
           </div>
           <div class="form-box">
             <h2 class="form-box-label">炭水化物：　</h2>
-            <input type="text" class="form-box-input" name="carbohydrate">
+            <input type="number" min="0" step="0.1" class="form-box-input" name="carbohydrate">
             <p class="unit">g</p>
           </div>
           <div class="form-box">
             <h2 class="form-box-label">塩分相当量：</h2>
-            <input type="text" class="form-box-input" name="salt">
+            <input type="number" min="0" step="0.1" class="form-box-input" name="salt">
             <p class="unit">g</p>
           </div>
           <div class="form-box">
