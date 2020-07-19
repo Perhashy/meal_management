@@ -3,6 +3,7 @@
 require_once('../config/config.php');
 require_once('../config/dbconnect.php');
 
+date_default_timezone_set('Asia/Tokyo');
 $date = date('Y-m-d');
 
 if (isset($_SESSION['id'])) {
@@ -30,6 +31,8 @@ if (!empty($_POST)) {
 
     header('Location: ../index.php');
     exit();
+  } else {
+    $error['name'] = 'blank';
   }
 }
 
@@ -56,7 +59,11 @@ if (!empty($_POST)) {
         <form action="" method="post">
           <div class="form-title">
             <h2>名前</h2>
+            <p class="must">必須</p>
             <input type="text" class="form-title-input" name="name">
+            <?php if ($error['name'] === 'blank'): ?>
+              <p class="error">※名前を入力してください</p>
+            <?php endif;?>
           </div>
           <div class="form-box">
             <h2 class="form-box-label">エネルギー：</h2>
