@@ -27,6 +27,9 @@ if (!empty($_POST)) {
       $_POST['salt'],
       $_POST['ate_date']
     ));
+
+    header('Location: ../index.php');
+    exit();
   }
 }
 
