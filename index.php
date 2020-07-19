@@ -48,7 +48,7 @@ if ($date === date('Y-m-d')) {
       <div class="contents">
         <div class="contents-main">
           <h2 class="title"><?= $date;?>の摂取カロリー</h2>
-          <p class="total">1,700 kcal</p>
+          <p class="total"><?= number_format(array_sum(array_column($posts, 'calorie'))); ?> kcal</p>
         </div>
 
         <div class="contents-list">
@@ -86,19 +86,19 @@ if ($date === date('Y-m-d')) {
           <div class="contents-each-box">
             <div class="content">
               <h2 class="content-title"><たんぱく質></h2>
-              <p class="content-total">123.4 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'protein')), 1); ?> g</p>
             </div>
             <div class="content">
               <h2 class="content-title"><脂質></h2>
-              <p class="content-total">100.6 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'lipid')), 1); ?> g</p>
             </div>
             <div class="content">
               <h2 class="content-title"><炭水化物></h2>
-              <p class="content-total">123.4 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'carbohydrate')), 1); ?> g</p>
             </div>
             <div class="content">
               <h2 class="content-title"><食塩相当量></h2>
-              <p class="content-total">34.05 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'salt')), 1); ?> g</p>
             </div>
           </div>
         </div>
