@@ -7,6 +7,14 @@ if (isset($_SESSION['id'])) {
   $users = $db->prepare('SELECT * FROM users WHERE id=?');
   $users->execute(array($_SESSION['id']));
   $user = $users->fetch();
+
+  $date = date('Y-m-d');
+  $post = $db->prepare('SELECT * FROM posts WHERE user_id=? AND ate_date=?');
+  $post->execute(array(
+    $user['id'],
+    $date
+  ));
+  $posts = $post->fetchAll();
 } else {
   header('Location: top_page.php');
   exit();
