@@ -14,6 +14,21 @@ if (isset($_SESSION['id'])) {
   exit();
 }
 
+if (!empty($_POST)) {
+  if ($_POST['name'] !== '') {
+    $post = $db->prepare('INSERT INTO posts SET user_id=?, name=?, calorie=?, protein=?, lipid=?, carbohydrate=?, salt=?, ate_date=?, created=NOW()');
+    $post->execute(array(
+      $user['id'],
+      $_POST['name'],
+      $_POST['calorie'],
+      $_POST['protein'],
+      $_POST['lipid'],
+      $_POST['carbohydrate'],
+      $_POST['salt'],
+      $_POST['ate_date']
+    ));
+  }
+}
 
 
 ?>
