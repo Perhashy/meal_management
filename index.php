@@ -8,6 +8,16 @@ if (!isset($_SESSION['id'])) {
   exit();
 }
 
+if (!empty($_POST)) {
+  if ($_POST['name'] !== '') {
+    $posts = $db->prepare('INSERT INTO posts SET user_id=?, name=?, calorie=?, protein=?, lipid=?, carbohydrate=?, salt=?, ate_date=?');
+    $posts->execute(array(
+      $_SESSION['id'],
+    ));
+  }
+}
+
+
 ?>
 
 <!DOCTYPE html>

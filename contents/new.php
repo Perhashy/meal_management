@@ -1,6 +1,16 @@
 <?php
 
+require_once('../config/config.php');
+require_once('../config/dbconnect.php');
+
 $date = date('Y-m-d');
+
+if (isset($_SESSION['id'])) {
+  $current_user_id = $_SESSION['id'];
+} else {
+  header('Location: ../top_page.php');
+  exit();
+}
 
 ?>
 
