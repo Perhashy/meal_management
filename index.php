@@ -8,6 +8,7 @@ if (isset($_SESSION['id'])) {
   $users->execute(array($_SESSION['id']));
   $user = $users->fetch();
 
+  // 後に選択した日付を代入できるようにする
   $date = date('Y-m-d');
   $post = $db->prepare('SELECT * FROM posts WHERE user_id=? AND ate_date=?');
   $post->execute(array(
@@ -18,6 +19,13 @@ if (isset($_SESSION['id'])) {
 } else {
   header('Location: top_page.php');
   exit();
+}
+
+if ($date === date('Y-m-d')) {
+  $date = '本日';
+} else {
+  // 後に選択した日付を〇/〇の形で代入
+  $date = date('m/d');
 }
 
 ?>
@@ -39,7 +47,7 @@ if (isset($_SESSION['id'])) {
       </div>
       <div class="contents">
         <div class="contents-main">
-          <h2 class="title">〇/〇の摂取カロリー</h2>
+          <h2 class="title"><?= $date;?>の摂取カロリー</h2>
           <p class="total">1,700 kcal</p>
         </div>
 
