@@ -3,7 +3,6 @@
 require_once('../config/config.php');
 require_once('../config/dbconnect.php');
 
-date_default_timezone_set('Asia/Tokyo');
 $date = date('Y-m-d');
 
 if (isset($_SESSION['id'])) {
