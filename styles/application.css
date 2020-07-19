@@ -357,13 +357,29 @@ a {
 }
 
 .wrapper .form-title h2 {
+  display: inline-block;
   font-size: 20px;
   font-weight: bold;
+}
+
+.wrapper .form-title .must {
+  height: 25px;
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  line-height: 23px;
 }
 
 .wrapper .form-title-input {
   width: 100%;
   margin-top: 10px;
+}
+
+.wrapper .form-title .error {
+  color: red;
+  font-weight: bold;
 }
 
 .wrapper .form-box {
