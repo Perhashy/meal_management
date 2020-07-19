@@ -58,26 +58,18 @@ if (isset($_SESSION['id'])) {
               <th></th>
               <th></th>
             </tr>
-            <tr>
-              <td>アーモンド 100g</td>
-              <td>660</td>
-              <td>18.9</td>
-              <td>56.4</td>
-              <td>19.1</td>
-              <td>0.0</td>
-              <td><a href="contents/edit.php" class="edit">編集</a></td>
-              <td><a href="contents/delete.php" class="delete">削除</a></td>
-            </tr>
-            <tr>
-              <td>チョコレート 100g</td>
-              <td>618</td>
-              <td>9.7</td>
-              <td>46.1</td>
-              <td>41.0</td>
-              <td>0.01</td>
-              <td><a href="contents/edit.php" class="edit">編集</a></td>
-              <td><a href="contents/delete.php" class="delete">削除</a></td>
-            </tr>
+            <?php foreach ($posts as $post): ?>
+              <tr>
+                <td><?= $post['name'];?></td>
+                <td><?= number_format($post['calorie']);?></td>
+                <td><?= number_format($post['protein'], 1);?></td>
+                <td><?= number_format($post['lipid'], 1);?></td>
+                <td><?= number_format($post['carbohydrate'], 1);?></td>
+                <td><?= number_format($post['salt'], 1);?></td>
+                <td><a href="contents/edit.php" class="edit">編集</a></td>
+                <td><a href="contents/delete.php" class="delete">削除</a></td>
+              </tr>
+            <?php endforeach; ?>
           </table>
         </div>
 
