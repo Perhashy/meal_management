@@ -6,11 +6,15 @@ require_once('../config/dbconnect.php');
 $date = date('Y-m-d');
 
 if (isset($_SESSION['id'])) {
-  $current_user_id = $_SESSION['id'];
+  $users = $db->prepare('SELECT * FROM users WHERE id=?');
+  $users->execute(array($_SESSION['id']));
+  $user = $users->fetch();
 } else {
   header('Location: ../top_page.php');
   exit();
 }
+
+
 
 ?>
 

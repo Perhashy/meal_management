@@ -3,20 +3,14 @@
 require_once('config/config.php');
 require_once('config/dbconnect.php');
 
-if (!isset($_SESSION['id'])) {
+if (isset($_SESSION['id'])) {
+  $users = $db->prepare('SELECT * FROM users WHERE id=?');
+  $users->execute(array($_SESSION['id']));
+  $user = $users->fetch();
+} else {
   header('Location: top_page.php');
   exit();
 }
-
-if (!empty($_POST)) {
-  if ($_POST['name'] !== '') {
-    $posts = $db->prepare('INSERT INTO posts SET user_id=?, name=?, calorie=?, protein=?, lipid=?, carbohydrate=?, salt=?, ate_date=?');
-    $posts->execute(array(
-      $_SESSION['id'],
-    ));
-  }
-}
-
 
 ?>
 
