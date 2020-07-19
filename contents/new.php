@@ -1,3 +1,10 @@
+<?php
+
+$date = date('Y-m-d');
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -46,7 +53,7 @@
           </div>
           <div class="form-box">
             <h2 class="form-box-label">日付：　　　</h2>
-            <input type="date" class="form-box-input" name="ate_date">
+            <input type="date" class="form-box-input" name="ate_date" value="<?= $date;?>">
           </div>
           <div class="submit">
             <input type="submit" class="submit-btn" value="追加する">
