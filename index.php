@@ -7,9 +7,25 @@ if (isset($_SESSION['id'])) {
   $users = $db->prepare('SELECT * FROM users WHERE id=?');
   $users->execute(array($_SESSION['id']));
   $user = $users->fetch();
+
+  // 後に選択した日付を代入できるようにする
+  $date = date('Y-m-d');
+  $post = $db->prepare('SELECT * FROM posts WHERE user_id=? AND ate_date=?');
+  $post->execute(array(
+    $user['id'],
+    $date
+  ));
+  $posts = $post->fetchAll();
 } else {
   header('Location: top_page.php');
   exit();
+}
+
+if ($date === date('Y-m-d')) {
+  $date = '本日';
+} else {
+  // 後に選択した日付を〇/〇の形で代入
+  $date = date('m/d');
 }
 
 ?>
@@ -31,8 +47,8 @@ if (isset($_SESSION['id'])) {
       </div>
       <div class="contents">
         <div class="contents-main">
-          <h2 class="title">〇/〇の摂取カロリー</h2>
-          <p class="total">1,700 kcal</p>
+          <h2 class="title"><?= $date;?>の摂取カロリー</h2>
+          <p class="total"><?= number_format(array_sum(array_column($posts, 'calorie'))); ?> kcal</p>
         </div>
 
         <div class="contents-list">
@@ -50,26 +66,18 @@ if (isset($_SESSION['id'])) {
               <th></th>
               <th></th>
             </tr>
-            <tr>
-              <td>アーモンド 100g</td>
-              <td>660</td>
-              <td>18.9</td>
-              <td>56.4</td>
-              <td>19.1</td>
-              <td>0.0</td>
-              <td><a href="contents/edit.php" class="edit">編集</a></td>
-              <td><a href="contents/delete.php" class="delete">削除</a></td>
-            </tr>
-            <tr>
-              <td>チョコレート 100g</td>
-              <td>618</td>
-              <td>9.7</td>
-              <td>46.1</td>
-              <td>41.0</td>
-              <td>0.01</td>
-              <td><a href="contents/edit.php" class="edit">編集</a></td>
-              <td><a href="contents/delete.php" class="delete">削除</a></td>
-            </tr>
+            <?php foreach ($posts as $post): ?>
+              <tr>
+                <td><?= mb_substr($post['name'], 0 , 20);?></td>
+                <td><?= number_format($post['calorie']);?></td>
+                <td><?= number_format($post['protein'], 1);?></td>
+                <td><?= number_format($post['lipid'], 1);?></td>
+                <td><?= number_format($post['carbohydrate'], 1);?></td>
+                <td><?= number_format($post['salt'], 1);?></td>
+                <td><a href="contents/edit.php" class="edit">編集</a></td>
+                <td><a href="contents/delete.php" class="delete">削除</a></td>
+              </tr>
+            <?php endforeach; ?>
           </table>
         </div>
 
@@ -78,19 +86,19 @@ if (isset($_SESSION['id'])) {
           <div class="contents-each-box">
             <div class="content">
               <h2 class="content-title"><たんぱく質></h2>
-              <p class="content-total">123.4 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'protein')), 1); ?> g</p>
             </div>
             <div class="content">
               <h2 class="content-title"><脂質></h2>
-              <p class="content-total">100.6 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'lipid')), 1); ?> g</p>
             </div>
             <div class="content">
               <h2 class="content-title"><炭水化物></h2>
-              <p class="content-total">123.4 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'carbohydrate')), 1); ?> g</p>
             </div>
             <div class="content">
               <h2 class="content-title"><食塩相当量></h2>
-              <p class="content-total">34.05 g</p>
+              <p class="content-total"><?= number_format(array_sum(array_column($posts, 'salt')), 1); ?> g</p>
             </div>
           </div>
         </div>
