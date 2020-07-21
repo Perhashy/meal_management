@@ -34,5 +34,5 @@
 |carbohydrate   |double(5,1)||
 |salt           |double(4,1)||
 |ate_date       |date||
-|user_id        |integer    |null: false|
+|user_id        |integer    |null: false,foreign_key: true|
 |created        |datetime|null: false|
