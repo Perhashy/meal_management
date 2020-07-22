@@ -108,6 +108,7 @@ if (!empty($_POST)) {
             <input type="date" class="form-box-input" name="ate_date" value="<?= $post['ate_date'];?>">
           </div>
           <div class="submit">
+          <a href="../index.php" class="submit-btn home">ホームへ</a>
             <input type="submit" class="submit-btn" value="更新する">
           </div>
         </form>

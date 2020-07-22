@@ -50,10 +50,14 @@
     }
     .submit{
       margin-top: 20px;
+      display: flex;
       &-btn{
         @include submit();
         background-color: #87cefa;
         margin: 0 auto;
+      }
+      .home{
+        background-color: tomato;
       }
     }
   }
