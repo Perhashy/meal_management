@@ -10,6 +10,9 @@ if (isset($_SESSION['id'])) {
 
   // 後に選択した日付を代入できるようにする
   $date = date('Y-m-d');
+  if ($_POST) {
+    $date = $_POST['date'];
+  }
   $post = $db->prepare('SELECT * FROM posts WHERE user_id=? AND ate_date=?');
   $post->execute(array(
     $user['id'],
@@ -22,10 +25,10 @@ if (isset($_SESSION['id'])) {
 }
 
 if ($date === date('Y-m-d')) {
-  $date = '本日';
+  $selectDate = '本日';
 } else {
   // 後に選択した日付を〇/〇の形で代入
-  $date = date('m/d');
+  $selectDate = date('m/d',strtotime($date));
 }
 
 ?>
@@ -47,7 +50,11 @@ if ($date === date('Y-m-d')) {
       </div>
       <div class="contents">
         <div class="contents-main">
-          <h2 class="title"><?= $date;?>の摂取カロリー</h2>
+          <form action="" method="post" class="date">
+            <input type="date" name="date" value="<?= $date;?>">
+            <input type="submit" value="日付を選択" class="submit">
+          </form>
+          <h2 class="title"><?= $selectDate;?>の摂取カロリー</h2>
           <p class="total"><?= number_format(array_sum(array_column($posts, 'calorie'))); ?> kcal</p>
         </div>
 

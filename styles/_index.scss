@@ -15,6 +15,15 @@ a{
       width: 500px;
       margin: 0 auto;
       text-align: center;
+      .date{
+        .submit{
+          background-color: #87cefa;
+          padding: 2px 5px;
+          border-radius: 5px;
+          border: 1px solid gray;
+        
+        }
+      }
       .title{
         font-size: 36px;
         font-weight: bold;

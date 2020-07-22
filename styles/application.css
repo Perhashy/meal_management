@@ -173,6 +173,13 @@ a {
   text-align: center;
 }
 
+.wrapper .contents-main .date .submit {
+  background-color: #87cefa;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
 .wrapper .contents-main .title {
   font-size: 36px;
   font-weight: bold;
