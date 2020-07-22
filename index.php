@@ -46,7 +46,14 @@ if ($date === date('Y-m-d')) {
     <div class="wrapper">
       <div class="header">
         <h1>食事管理アプリ（仮</h1>
-        <a href="users/logout.php">ログアウト</a>
+        <ul class="nav">
+          <li>
+            <a href=""><?= $user['name'];?></a>
+            <ul>
+              <li><a href="users/logout.php">ログアウト</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="contents">
         <div class="contents-main">

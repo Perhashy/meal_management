@@ -159,6 +159,40 @@ a {
           justify-content: space-between;
 }
 
+.wrapper .header .nav {
+  height: 32px;
+  margin: 34px 30px;
+}
+
+.wrapper .header .nav li {
+  list-style: none;
+  position: relative;
+}
+
+.wrapper .header .nav li a {
+  background: #fff;
+  border: 1px solid gray;
+  color: #000;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.wrapper .header .nav li li {
+  height: 0;
+  overflow: hidden;
+}
+
+.wrapper .header .nav li:hover > ul > li {
+  height: 32px;
+  overflow: visible;
+}
+
 .wrapper .header a {
   display: block;
 }
