@@ -74,7 +74,7 @@ if ($date === date('Y-m-d')) {
                 <td><?= number_format($post['lipid'], 1);?></td>
                 <td><?= number_format($post['carbohydrate'], 1);?></td>
                 <td><?= number_format($post['salt'], 1);?></td>
-                <td><a href="contents/edit.php" class="edit">編集</a></td>
+                <td><a href="contents/edit.php?<?= $post['id']; ?>" class="edit">編集</a></td>
                 <td><a href="contents/delete.php" class="delete">削除</a></td>
               </tr>
             <?php endforeach; ?>
