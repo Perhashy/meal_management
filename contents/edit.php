@@ -1,3 +1,21 @@
+<?php
+
+require_once('../config/config.php');
+require_once('../config/dbconnect.php');
+
+if (isset($_SESSION['id'])) {
+  $users = $db->prepare('SELECT * FROM users WHERE id=?');
+  $users->execute(array($_SESSION['id']));
+  $user = $users->fetch();
+} else {
+  header('Location: ../top_page.php');
+  exit();
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
