@@ -420,4 +420,38 @@ a {
   background-color: #87cefa;
   margin: 0 auto;
 }
+
+.wrapper .message {
+  width: 660px;
+  padding: 30px;
+  margin: 24px auto 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));
+  background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));
+}
+
+.wrapper .message h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper .message .submit {
+  margin-top: 20px;
+}
+
+.wrapper .message .submit-btn {
+  display: block;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  width: 220px;
+  background-color: #87cefa;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=application.css.map */
