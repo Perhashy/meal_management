@@ -7,6 +7,10 @@ if (isset($_SESSION['id'])) {
   $users = $db->prepare('SELECT * FROM users WHERE id=?');
   $users->execute(array($_SESSION['id']));
   $user = $users->fetch();
+
+  if (isset($_REQUEST['id']) && is_numeric($_REQUEST['id'])) {
+    $id = $_REQUEST['id'];
+  }
 } else {
   header('Location: ../top_page.php');
   exit();
