@@ -27,6 +27,28 @@ if (isset($_SESSION['id'])) {
   exit();
 }
 
+if (!empty($_POST)) {
+  if ($_POST['name'] !=='') {
+    $post = $db->prepare('UPDATE posts SET name=?, calorie=?, protein=?, lipid=?, carbohydrate=?, salt=?, ate_date=? WHERE id=?');
+    $post->execute(array(
+      $_POST['name'],
+      $_POST['calorie'],
+      $_POST['protein'],
+      $_POST['lipid'],
+      $_POST['carbohydrate'],
+      $_POST['salt'],
+      $_POST['ate_date'],
+      $_REQUEST['id']
+    ));
+
+    header('Location: ../index.php');
+    exit();
+
+  } else {
+    $post = $_POST;
+    $error['name'] = 'blank';
+  }
+}
 
 ?>
 
@@ -46,7 +68,7 @@ if (isset($_SESSION['id'])) {
         <h1>食事管理アプリ（仮</h1>
       </div>
       <div class="form">
-        <h1>食べたものを追加</h1>
+        <h1>食べたものを編集</h1>
         <form action="" method="post">
           <div class="form-title">
             <h2>名前</h2>
