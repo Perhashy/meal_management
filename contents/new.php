@@ -1,7 +1,7 @@
 <?php
 
-require_once('../config/config.php');
-require_once('../config/dbconnect.php');
+require_once(__DIR__ . '/../config/config.php');
+require_once(__DIR__ . '/../config/dbconnect.php');
 
 $date = date('Y-m-d');
 
