@@ -13,7 +13,7 @@
         <!-- 背景画像予定 -->
       </div>
       <div class="header">
-        <h1>ロゴ画像</h1>
+        <h1>食事管理アプリ（仮</h1>
       </div>
       <div class="container">
         <div class="introduction">
