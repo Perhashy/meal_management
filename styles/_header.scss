@@ -14,7 +14,6 @@
   }
   .nav{
     height: 32px;
-    // margin: 34px 30px;
     li{
       list-style: none;
       position: relative;
@@ -45,5 +44,30 @@
   a{
     display: block;
   }
+}
 
+@media(max-width: 414px) {
+  .header{
+    height: 80px;
+    padding: 18px;
+    h1{
+      font-size: 20px;
+      line-height: 44px;
+    }
+    .nav{
+      height: 26px;
+      margin: auto 0;
+      li{
+        a{
+          padding: 0 5px;
+          height: 26px;
+          line-height: 26px;
+          font-size: 14px;
+        }
+      }
+    }
+    .nav li:hover > ul > li {
+      height: 26px;
+    }
+  }
 }
