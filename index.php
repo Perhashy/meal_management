@@ -48,7 +48,7 @@ if ($date === date('Y-m-d')) {
         <h1>食事管理アプリ（仮</h1>
         <ul class="nav">
           <li>
-            <a href=""><?= $user['name'];?></a>
+            <a href=""><?= mb_substr($user['name'], 0, 10);?></a>
             <ul>
               <li><a href="users/logout.php">ログアウト</a></li>
             </ul>

@@ -47,6 +47,7 @@ if (isset($_SESSION['id'])) {
       <div class="header">
         <h1>食事管理アプリ（仮</h1>
       </div>
+      <div class="padding"></div>
       <div class="message">
         <h1>投稿を削除しました</h1>
         <div class="submit">

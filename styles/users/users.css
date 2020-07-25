@@ -146,22 +146,96 @@ legend {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.wrapper .header {
+.header {
   width: 100vw;
   height: 100px;
   background-color: #87cefa;
+  padding: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 100;
 }
 
-.wrapper .header h1 {
+.header h1 {
   font-size: 36px;
   font-weight: bold;
-  line-height: 100px;
-  margin-left: 30px;
+  line-height: 52px;
+}
+
+.header .nav {
+  height: 32px;
+}
+
+.header .nav li {
+  list-style: none;
+  position: relative;
+}
+
+.header .nav li a {
+  background: #fff;
+  border: 1px solid gray;
+  padding: 0 10px;
+  color: #000;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.header .nav li li {
+  height: 0;
+  overflow: hidden;
+}
+
+.header .nav li:hover > ul > li {
+  height: 32px;
+  overflow: visible;
+}
+
+.header a {
+  display: block;
+}
+
+@media (max-width: 414px) {
+  .header {
+    height: 80px;
+    padding: 18px;
+  }
+  .header h1 {
+    font-size: 20px;
+    line-height: 44px;
+  }
+  .header .nav {
+    height: 26px;
+    margin: auto 0;
+  }
+  .header .nav li a {
+    padding: 0 5px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+  }
+  .header .nav li:hover > ul > li {
+    height: 26px;
+  }
+}
+
+.wrapper .padding {
+  height: 100px;
 }
 
 .wrapper .form {
   width: 660px;
-  height: 500px;
+  min-height: 480px;
   padding: 30px;
   margin: 24px auto 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));

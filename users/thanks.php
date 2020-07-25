@@ -12,6 +12,7 @@
       <div class="header">
         <h1>ユーザー登録</h1>
       </div>
+      <div class="padding"></div>
       <div class="form">
         <p class="form-message">ユーザー登録が完了しました</p>
         <div class="submit">

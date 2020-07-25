@@ -51,6 +51,7 @@ if (!empty($_POST)) {
       <div class="header">
         <h1>ログイン</h1>
       </div>
+      <div class="padding"></div>
       <div class="form">
         <form action="" method="post">
           <p class="form-message">メールアドレスとパスワードを入力してログインしてください</p>

@@ -67,6 +67,7 @@ if (!empty($_POST)) {
       <div class="header">
         <h1>食事管理アプリ（仮</h1>
       </div>
+      <div class="padding"></div>
       <div class="form">
         <h1>食べたものを編集</h1>
         <form action="" method="post">

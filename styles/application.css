@@ -146,32 +146,40 @@ legend {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-a {
-  text-decoration: none;
-}
-
-.wrapper .header {
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: #87cefa;
+  padding: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  z-index: 100;
 }
 
-.wrapper .header .nav {
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 52px;
+}
+
+.header .nav {
   height: 32px;
-  margin: 34px 30px;
 }
 
-.wrapper .header .nav li {
+.header .nav li {
   list-style: none;
   position: relative;
 }
 
-.wrapper .header .nav li a {
+.header .nav li a {
   background: #fff;
   border: 1px solid gray;
+  padding: 0 10px;
   color: #000;
   display: block;
   height: 32px;
@@ -183,22 +191,50 @@ a {
   width: 100%;
 }
 
-.wrapper .header .nav li li {
+.header .nav li li {
   height: 0;
   overflow: hidden;
 }
 
-.wrapper .header .nav li:hover > ul > li {
+.header .nav li:hover > ul > li {
   height: 32px;
   overflow: visible;
 }
 
-.wrapper .header a {
+.header a {
   display: block;
 }
 
+@media (max-width: 414px) {
+  .header {
+    height: 80px;
+    padding: 18px;
+  }
+  .header h1 {
+    font-size: 20px;
+    line-height: 44px;
+  }
+  .header .nav {
+    height: 26px;
+    margin: auto 0;
+  }
+  .header .nav li a {
+    padding: 0 5px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+  }
+  .header .nav li:hover > ul > li {
+    height: 26px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
 .wrapper .contents {
-  padding: 36px 0;
+  padding: 136px 0;
 }
 
 .wrapper .contents-main {
@@ -318,23 +354,10 @@ a {
   line-height: 160px;
 }
 
-.wrapper .header {
-  width: 100vw;
-  height: 100px;
-  background-color: #87cefa;
-}
-
-.wrapper .header h1 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 100px;
-  margin-left: 30px;
-}
-
 .wrapper .container {
   width: 1140px;
   height: 530px;
-  padding: 48px 60px;
+  padding: 148px 60px;
   margin: 0 auto;
   text-align: center;
 }
@@ -378,6 +401,10 @@ a {
 .wrapper .container .link .signup {
   margin-left: 10px;
   background-color: orange;
+}
+
+.wrapper .padding {
+  height: 100px;
 }
 
 .wrapper .form {
