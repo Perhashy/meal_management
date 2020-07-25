@@ -2,23 +2,26 @@
   width: 100vw;
   height: 100px;
   background-color: #87cefa;
+  padding: 26px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 100;
   h1{
     font-size: 36px;
     font-weight: bold;
-    line-height: 100px;
-    margin-left: 30px;
+    line-height: 52px;
   }
   .nav{
     height: 32px;
-    margin: 34px 30px;
+    // margin: 34px 30px;
     li{
       list-style: none;
       position: relative;
       a{
         background: #fff;
         border: 1px solid gray;
+        padding: 0 10px;
         color: #000;
         display: block;
         height: 32px;

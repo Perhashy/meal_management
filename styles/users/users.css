@@ -150,24 +150,25 @@ legend {
   width: 100vw;
   height: 100px;
   background-color: #87cefa;
+  padding: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  z-index: 100;
 }
 
 .header h1 {
   font-size: 36px;
   font-weight: bold;
-  line-height: 100px;
-  margin-left: 30px;
+  line-height: 52px;
 }
 
 .header .nav {
   height: 32px;
-  margin: 34px 30px;
 }
 
 .header .nav li {
@@ -178,6 +179,7 @@ legend {
 .header .nav li a {
   background: #fff;
   border: 1px solid gray;
+  padding: 0 10px;
   color: #000;
   display: block;
   height: 32px;
@@ -203,9 +205,13 @@ legend {
   display: block;
 }
 
+.wrapper .padding {
+  height: 100px;
+}
+
 .wrapper .form {
   width: 660px;
-  height: 500px;
+  min-height: 480px;
   padding: 30px;
   margin: 24px auto 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 206, 250, 0.1)), to(rgba(135, 206, 250, 0.5)));

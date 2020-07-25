@@ -3,9 +3,12 @@
 @import "../header";
 
 .wrapper{
+  .padding{
+    height: 100px;
+  }
   .form{
     width: 660px;
-    height: 500px;
+    min-height: 480px;
     padding: 30px;
     margin: 24px auto 0;
     background: linear-gradient(rgba(135, 206, 250, 0.1), rgba(135, 206, 250, 0.5));

@@ -36,6 +36,7 @@ if (!empty($_POST)) {
       <div class="header">
         <h1>ユーザー登録</h1>
       </div>
+      <div class="padding"></div>
       <div class="form">
         <form action="" method="post">
           <input type="hidden" name="action" value="submit">
