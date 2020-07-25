@@ -146,17 +146,61 @@ legend {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.wrapper .header {
+.header {
   width: 100vw;
   height: 100px;
   background-color: #87cefa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.wrapper .header h1 {
+.header h1 {
   font-size: 36px;
   font-weight: bold;
   line-height: 100px;
   margin-left: 30px;
+}
+
+.header .nav {
+  height: 32px;
+  margin: 34px 30px;
+}
+
+.header .nav li {
+  list-style: none;
+  position: relative;
+}
+
+.header .nav li a {
+  background: #fff;
+  border: 1px solid gray;
+  color: #000;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.header .nav li li {
+  height: 0;
+  overflow: hidden;
+}
+
+.header .nav li:hover > ul > li {
+  height: 32px;
+  overflow: visible;
+}
+
+.header a {
+  display: block;
 }
 
 .wrapper .form {

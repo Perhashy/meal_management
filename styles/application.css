@@ -146,11 +146,10 @@ legend {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-a {
-  text-decoration: none;
-}
-
-.wrapper .header {
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: #87cefa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,17 +158,24 @@ a {
           justify-content: space-between;
 }
 
-.wrapper .header .nav {
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100px;
+  margin-left: 30px;
+}
+
+.header .nav {
   height: 32px;
   margin: 34px 30px;
 }
 
-.wrapper .header .nav li {
+.header .nav li {
   list-style: none;
   position: relative;
 }
 
-.wrapper .header .nav li a {
+.header .nav li a {
   background: #fff;
   border: 1px solid gray;
   color: #000;
@@ -183,18 +189,22 @@ a {
   width: 100%;
 }
 
-.wrapper .header .nav li li {
+.header .nav li li {
   height: 0;
   overflow: hidden;
 }
 
-.wrapper .header .nav li:hover > ul > li {
+.header .nav li:hover > ul > li {
   height: 32px;
   overflow: visible;
 }
 
-.wrapper .header a {
+.header a {
   display: block;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper .contents {
