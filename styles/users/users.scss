@@ -43,6 +43,11 @@
           border: 1px solid gray;
           border-radius: 5px;
           margin-top: 10px;
+          padding: 0 5px;
+        }
+        select{
+          height: 30px;
+          margin-top: 10px;
         }
         .error{
           color: red;
@@ -68,6 +73,61 @@
       }
       .reedit{
         background-color: tomato;
+      }
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  .wrapper{
+    .padding{
+      height: 80px;
+    }
+    .form{
+      width: 100vw;
+      height: calc(100vh - 80px);
+      margin-top: 0;
+      padding: 20px;
+      &-message{
+        font-size: 14px;
+        color: #696969;
+      }
+      &-box{
+        margin-top: 10px;
+        .title{
+          display: inline-block;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .content{
+          font-size: 14px;
+        }
+        .must{
+        }
+        .input{
+          input{
+          }
+          .error{
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+        .checkbox{
+          display: flex;
+          margin-top: 10px;
+          &-message{
+            font-size: 18px;
+          }
+        }
+      }
+      .submit{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        &-btn{
+          @include submit();
+          font-size: 16px;
+        }
       }
     }
   }

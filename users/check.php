@@ -40,14 +40,14 @@ if (!empty($_POST)) {
       <div class="form">
         <form action="" method="post">
           <input type="hidden" name="action" value="submit">
-          <p class="form-message">記入した内容を確認して、「登録する」をクリックしてください</p>
+          <p class="form-message">記入した内容を確認して、「登録する」を押してください</p>
           <div class="form-box">
             <p class="title">・ニックネーム</p>
-            <p class="content"><?= h($_SESSION['user']['name']);?></p>
+            <p class="content">　<?= h($_SESSION['user']['name']);?></p>
           </div>
           <div class="form-box">
             <p class="title">・メールアドレス</p>
-            <p class="content"><?= h($_SESSION['user']['email']);?></p>
+            <p class="content">　<?= h($_SESSION['user']['email']);?></p>
           </div>
           <div class="form-box">
             <p class="title">・パスワード</p>
@@ -55,7 +55,7 @@ if (!empty($_POST)) {
           </div>
           <div class="form-box">
             <p class="title">・年齢</p>
-            <p class="content"><?= h($_SESSION['user']['age']);?></p>
+            <p class="content">　<?= h($_SESSION['user']['age']);?> 歳</p>
           </div>
           <div class="submit">
             <a href="sign_up.php?action=rewrite" class="submit-btn reedit">« 書き直す</a>
