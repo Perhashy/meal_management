@@ -1,9 +1,7 @@
 .wrapper{
   .container{
-    width: 1140px;
-    height: 530px;
+    width: 100vw;
     padding: 148px 60px;
-    margin: 0 auto;
     text-align: center;
     .introduction{
       &-title{
@@ -27,6 +25,28 @@
       .signup{
         margin-left: 10px;
         background-color: orange;
+      }
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  .wrapper{
+    .container{
+      padding: 128px 40px;
+      .introduction{
+        &-title{
+          font-size: 20px;
+          font-weight: bold;
+        }
+        &-message{
+          font-size: 14px;
+        }
+      }
+      .link{
+        a{
+          font-size: 10px;
+        }
       }
     }
   }
