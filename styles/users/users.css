@@ -278,6 +278,12 @@ legend {
   border: 1px solid gray;
   border-radius: 5px;
   margin-top: 10px;
+  padding: 0 5px;
+}
+
+.wrapper .form-box .input select {
+  height: 30px;
+  margin-top: 10px;
 }
 
 .wrapper .form-box .input .error {
@@ -323,5 +329,67 @@ legend {
 
 .wrapper .form .submit .reedit {
   background-color: tomato;
+}
+
+@media (max-width: 414px) {
+  .wrapper .padding {
+    height: 80px;
+  }
+  .wrapper .form {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    margin-top: 0;
+    padding: 20px;
+  }
+  .wrapper .form-message {
+    font-size: 14px;
+    color: #696969;
+  }
+  .wrapper .form-box {
+    margin-top: 10px;
+  }
+  .wrapper .form-box .title {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .wrapper .form-box .content {
+    font-size: 14px;
+  }
+  .wrapper .form-box .input .error {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .wrapper .form-box .checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+  }
+  .wrapper .form-box .checkbox-message {
+    font-size: 18px;
+  }
+  .wrapper .form .submit {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper .form .submit-btn {
+    display: block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=users.css.map */
