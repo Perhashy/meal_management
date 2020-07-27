@@ -30,6 +30,7 @@
 
       &-input{
         width: 100%;
+        padding: 0 2px;
         margin-top: 10px;
       }
       .error{
@@ -46,6 +47,7 @@
       }
       &-input{
         width: 160px;
+        padding: 0 2px;
       }
       .unit{
         margin-left: 5px;
@@ -54,13 +56,60 @@
     .submit{
       margin-top: 20px;
       display: flex;
+      justify-content: center;
       &-btn{
         @include submit();
         background-color: #87cefa;
-        margin: 0 auto;
+        margin-left: 10px;
       }
       .home{
         background-color: tomato;
+      }
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  .wrapper{
+    .padding {
+      height: 80px;
+    }
+    .form{
+      width: 100vw;
+      height: calc(100vh - 80px);
+      padding: 20px;
+      margin-top: 0;
+      h1{
+        font-size: 20px;
+      }
+      &-title{
+        margin-top: 10px;
+        h2{
+          font-size: 16px;
+        }
+        .must{
+          font-size: 16px;
+          height: 22px;
+          line-height: 20px;
+        }
+
+        .error{
+          font-size: 14px;
+        }
+      }
+      &-box{
+        margin-top: 10px;
+        &-label{
+          font-size: 14px;
+        }
+        &-input{
+          width: 159px;
+        }
+      }
+      .submit{
+        &-btn{
+          font-size: 16px;
+        }
       }
     }
   }

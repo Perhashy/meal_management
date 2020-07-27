@@ -14,7 +14,6 @@ a{
           padding: 2px 5px;
           border-radius: 5px;
           border: 1px solid gray;
-        
         }
       }
       .title{
@@ -45,17 +44,34 @@ a{
           background-color: #87cefa;
         }
       }
-      table{
-        margin: 16px auto 0;
-        th{
-          padding: 5px;
-        }
-        td{
-          padding: 5px;
+      .table{
+        overflow: scroll;
+        table{
+          width: 737px;
+          margin: 16px auto 0;
+          th{
+            padding: 5px;
+            text-align: center;
+          }
+          td{
+            width: 94px;
+            padding: 5px;
+            .name{
+              width: 169px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          .value{
+            text-align: right;
+          }
           .edit{
+            width: 43px;
             color: blue;
           }
           .delete{
+            width: 43px;
             color: red;
           }
         }
@@ -90,6 +106,39 @@ a{
             border-radius: 50%;
             margin: 0 auto;
             line-height: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  .wrapper{
+    .contents{
+      width: 100vw;
+      padding: 116px 0;
+      &-main{
+        width: 100%;
+        .title{
+          font-size: 30px;
+          font-weight: bold;
+        }
+        .total{
+        }
+      }
+      &-list{
+        margin-top: 36px;
+        }
+        &-each{
+        &-box{
+          width: 100%;
+          .content{
+            &-total{
+              width: 140px;
+              height: 140px;
+              line-height: 140px;
+            }
           }
         }
       }

@@ -69,30 +69,32 @@ if ($date === date('Y-m-d')) {
           <h2 class="title"><食べたものリスト>
             <a href="contents/new.php">新しく追加する</a>
           </h2>
-          <table border="1">
-            <tr>
-              <th>名前</th>
-              <th>エネルギー(kcal)</th>
-              <th>たんぱく質(g)</th>
-              <th>脂質(g)</th>
-              <th>炭水化物(g)</th>
-              <th>塩分相当量(g)</th>
-              <th></th>
-              <th></th>
-            </tr>
-            <?php foreach ($posts as $post): ?>
+          <div class="table">
+            <table border="1">
               <tr>
-                <td><?= mb_substr($post['name'], 0 , 20);?></td>
-                <td><?= number_format($post['calorie']);?></td>
-                <td><?= number_format($post['protein'], 1);?></td>
-                <td><?= number_format($post['lipid'], 1);?></td>
-                <td><?= number_format($post['carbohydrate'], 1);?></td>
-                <td><?= number_format($post['salt'], 1);?></td>
-                <td><a href="contents/edit.php?id=<?= $post['id']; ?>" class="edit">編集</a></td>
-                <td><a href="contents/delete.php?id=<?= $post['id']; ?>" class="delete">削除</a></td>
+                <th>名前</th>
+                <th>エネルギー</th>
+                <th>たんぱく質</th>
+                <th>脂質</th>
+                <th>炭水化物</th>
+                <th>塩分相当量</th>
+                <th></th>
+                <th></th>
               </tr>
-            <?php endforeach; ?>
-          </table>
+              <?php foreach ($posts as $post): ?>
+                <tr>
+                  <td><p class="name"><?= mb_substr($post['name'], 0 , 20);?></p></td>
+                  <td class="value"><?= number_format($post['calorie']);?> kcal</td>
+                  <td class="value"><?= number_format($post['protein'], 1);?> g</td>
+                  <td class="value"><?= number_format($post['lipid'], 1);?> g</td>
+                  <td class="value"><?= number_format($post['carbohydrate'], 1);?> g</td>
+                  <td class="value"><?= number_format($post['salt'], 1);?> g</td>
+                  <td class="edit"><a href="contents/edit.php?id=<?= $post['id']; ?>" class="edit">編集</a></td>
+                  <td class="delete"><a href="contents/delete.php?id=<?= $post['id']; ?>" class="delete">削除</a></td>
+                </tr>
+              <?php endforeach; ?>
+            </table>
+          </div>
         </div>
 
         <div class="contents-each">

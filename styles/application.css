@@ -292,23 +292,43 @@ a {
   background-color: #87cefa;
 }
 
-.wrapper .contents-list table {
+.wrapper .contents-list .table {
+  overflow: scroll;
+}
+
+.wrapper .contents-list .table table {
+  width: 737px;
   margin: 16px auto 0;
 }
 
-.wrapper .contents-list table th {
+.wrapper .contents-list .table table th {
+  padding: 5px;
+  text-align: center;
+}
+
+.wrapper .contents-list .table table td {
+  width: 94px;
   padding: 5px;
 }
 
-.wrapper .contents-list table td {
-  padding: 5px;
+.wrapper .contents-list .table table td .name {
+  width: 169px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.wrapper .contents-list table td .edit {
+.wrapper .contents-list .table table .value {
+  text-align: right;
+}
+
+.wrapper .contents-list .table table .edit {
+  width: 43px;
   color: blue;
 }
 
-.wrapper .contents-list table td .delete {
+.wrapper .contents-list .table table .delete {
+  width: 43px;
   color: red;
 }
 
@@ -352,6 +372,31 @@ a {
   border-radius: 50%;
   margin: 0 auto;
   line-height: 160px;
+}
+
+@media (max-width: 414px) {
+  .wrapper .contents {
+    width: 100vw;
+    padding: 116px 0;
+  }
+  .wrapper .contents-main {
+    width: 100%;
+  }
+  .wrapper .contents-main .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .wrapper .contents-list {
+    margin-top: 36px;
+  }
+  .wrapper .contents-each-box {
+    width: 100%;
+  }
+  .wrapper .contents-each-box .content-total {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+  }
 }
 
 .wrapper .container {
@@ -456,6 +501,7 @@ a {
 
 .wrapper .form-title-input {
   width: 100%;
+  padding: 0 2px;
   margin-top: 10px;
 }
 
@@ -478,6 +524,7 @@ a {
 
 .wrapper .form-box-input {
   width: 160px;
+  padding: 0 2px;
 }
 
 .wrapper .form-box .unit {
@@ -489,6 +536,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapper .form .submit-btn {
@@ -503,11 +553,52 @@ a {
   text-align: center;
   color: #000;
   background-color: #87cefa;
-  margin: 0 auto;
+  margin-left: 10px;
 }
 
 .wrapper .form .submit .home {
   background-color: tomato;
+}
+
+@media (max-width: 414px) {
+  .wrapper .padding {
+    height: 80px;
+  }
+  .wrapper .form {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    margin-top: 0;
+  }
+  .wrapper .form h1 {
+    font-size: 20px;
+  }
+  .wrapper .form-title {
+    margin-top: 10px;
+  }
+  .wrapper .form-title h2 {
+    font-size: 16px;
+  }
+  .wrapper .form-title .must {
+    font-size: 16px;
+    height: 22px;
+    line-height: 20px;
+  }
+  .wrapper .form-title .error {
+    font-size: 14px;
+  }
+  .wrapper .form-box {
+    margin-top: 10px;
+  }
+  .wrapper .form-box-label {
+    font-size: 14px;
+  }
+  .wrapper .form-box-input {
+    width: 159px;
+  }
+  .wrapper .form .submit-btn {
+    font-size: 16px;
+  }
 }
 
 .wrapper .message {
@@ -542,5 +633,22 @@ a {
   width: 220px;
   background-color: #87cefa;
   margin: 0 auto;
+}
+
+@media (max-width: 414px) {
+  .wrapper .message {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    margin: 0;
+  }
+  .wrapper .message h1 {
+    font-size: 16px;
+  }
+  .wrapper .message .submit-btn {
+    font-size: 16px;
+    width: 200px;
+    background-color: #87cefa;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=application.css.map */
