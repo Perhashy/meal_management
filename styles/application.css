@@ -534,6 +534,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrapper .form .submit-btn {
@@ -548,11 +551,52 @@ a {
   text-align: center;
   color: #000;
   background-color: #87cefa;
-  margin: 0 auto;
+  margin-left: 10px;
 }
 
 .wrapper .form .submit .home {
   background-color: tomato;
+}
+
+@media (max-width: 414px) {
+  .wrapper .padding {
+    height: 80px;
+  }
+  .wrapper .form {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    margin-top: 0;
+  }
+  .wrapper .form h1 {
+    font-size: 20px;
+  }
+  .wrapper .form-title {
+    margin-top: 10px;
+  }
+  .wrapper .form-title h2 {
+    font-size: 16px;
+  }
+  .wrapper .form-title .must {
+    font-size: 16px;
+    height: 22px;
+    line-height: 20px;
+  }
+  .wrapper .form-title .error {
+    font-size: 14px;
+  }
+  .wrapper .form-box {
+    margin-top: 10px;
+  }
+  .wrapper .form-box-label {
+    font-size: 14px;
+  }
+  .wrapper .form-box-input {
+    width: 156px;
+  }
+  .wrapper .form .submit-btn {
+    font-size: 16px;
+  }
 }
 
 .wrapper .message {
