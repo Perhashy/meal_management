@@ -354,6 +354,94 @@ a {
   line-height: 160px;
 }
 
+@media (max-width: 414px) {
+  .wrapper .contents {
+    width: 100vw;
+    padding: 116px 0;
+  }
+  .wrapper .contents-main {
+    width: 100%;
+  }
+  .wrapper .contents-main .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .wrapper .contents-list {
+    margin-top: 36px;
+  }
+  .wrapper .contents-list .title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .wrapper .contents-list .title a {
+    display: block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    display: inline-block;
+    font-size: 18px;
+    background-color: #87cefa;
+  }
+  .wrapper .contents-list table {
+    margin: 16px auto 0;
+  }
+  .wrapper .contents-list table th {
+    padding: 5px;
+  }
+  .wrapper .contents-list table td {
+    padding: 5px;
+  }
+  .wrapper .contents-list table td .edit {
+    color: blue;
+  }
+  .wrapper .contents-list table td .delete {
+    color: red;
+  }
+  .wrapper .contents-each {
+    margin-top: 36px;
+  }
+  .wrapper .contents-each-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .wrapper .contents-each-box {
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .wrapper .contents-each-box .content {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .wrapper .contents-each-box .content-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+  .wrapper .contents-each-box .content-total {
+    width: 160px;
+    height: 160px;
+    font-size: 28px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 160px;
+  }
+}
+
 .wrapper .container {
   width: 100vw;
   padding: 148px 60px;
