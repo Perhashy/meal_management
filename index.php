@@ -38,14 +38,14 @@ if ($date === date('Y-m-d')) {
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>食事管理アプリ（仮</title>
+    <title>食事管理アプリ</title>
     <link rel="stylesheet" href="styles/application.css">
   </head>
 
   <body>
     <div class="wrapper">
       <div class="header">
-        <h1>食事管理アプリ（仮</h1>
+        <h1>食事管理アプリ</h1>
         <ul class="nav">
           <li>
             <a href=""><?= mb_substr($user['name'], 0, 10);?></a>

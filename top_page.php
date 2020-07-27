@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>食事管理アプリ（仮</title>
+    <title>食事管理アプリ</title>
     <link rel="stylesheet" href="styles/application.css">
   </head>
 
@@ -13,11 +13,11 @@
         <!-- 背景画像予定 -->
       </div>
       <div class="header">
-        <h1>食事管理アプリ（仮</h1>
+        <h1>食事管理アプリ</h1>
       </div>
       <div class="container">
         <div class="introduction">
-          <p class="introduction-title">このサイトは食事管理アプリ（仮）です。</p>
+          <p class="introduction-title">このサイトは食事管理アプリです。</p>
           <p class="introduction-message">
             日々の摂取カロリーやたんぱく質の量など気にしている方のためのwebサイトです。<br>ダイエット、糖質制限をしている方など健康志向の方におすすめです！
           </p>
