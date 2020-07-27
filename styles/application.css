@@ -404,36 +404,12 @@ a {
   .wrapper .contents-list table td .delete {
     color: red;
   }
-  .wrapper .contents-each {
-    margin-top: 36px;
-  }
-  .wrapper .contents-each-title {
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-  }
   .wrapper .contents-each-box {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  .wrapper .contents-each-box .content {
-    margin: 0 auto;
-    text-align: center;
-  }
-  .wrapper .contents-each-box .content-title {
-    font-size: 26px;
-    font-weight: bold;
-    margin-top: 16px;
   }
   .wrapper .contents-each-box .content-total {
     width: 140px;
     height: 140px;
-    font-size: 28px;
     line-height: 140px;
   }
 }

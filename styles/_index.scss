@@ -140,29 +140,12 @@ a{
         }
       }
       &-each{
-        margin-top: 36px;
-        &-title{
-          font-size: 26px;
-          font-weight: bold;
-          text-align: center;
-        }
         &-box{
           width: 100%;
-          display: flex;
-          flex-wrap:wrap;
-          margin: 0 auto;
           .content{
-            margin: 0 auto;
-            text-align: center;
-            &-title{
-              font-size: 26px;
-              font-weight: bold;
-              margin-top: 16px;
-            }
             &-total{
               width: 140px;
               height: 140px;
-              font-size: 28px;
               line-height: 140px;
             }
           }
