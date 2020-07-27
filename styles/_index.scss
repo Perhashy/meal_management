@@ -48,6 +48,7 @@ a{
         margin: 16px auto 0;
         th{
           padding: 5px;
+          text-align: center;
         }
         td{
           padding: 5px;
@@ -57,6 +58,9 @@ a{
           .delete{
             color: red;
           }
+        }
+        .value{
+          text-align: right;
         }
       }
     }
@@ -112,16 +116,6 @@ a{
       }
       &-list{
         margin-top: 36px;
-        .title{
-          font-size: 26px;
-          font-weight: bold;
-          text-align: center;
-          a{
-            @include submit();
-            display: inline-block;
-            font-size: 18px;
-            background-color: #87cefa;
-          }
         }
         table{
           margin: 16px auto 0;
@@ -138,7 +132,6 @@ a{
             }
           }
         }
-      }
       &-each{
         &-box{
           width: 100%;

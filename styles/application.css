@@ -298,6 +298,7 @@ a {
 
 .wrapper .contents-list table th {
   padding: 5px;
+  text-align: center;
 }
 
 .wrapper .contents-list table td {
@@ -310,6 +311,10 @@ a {
 
 .wrapper .contents-list table td .delete {
   color: red;
+}
+
+.wrapper .contents-list table .value {
+  text-align: right;
 }
 
 .wrapper .contents-each {
@@ -369,39 +374,19 @@ a {
   .wrapper .contents-list {
     margin-top: 36px;
   }
-  .wrapper .contents-list .title {
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-  }
-  .wrapper .contents-list .title a {
-    display: block;
-    padding: 5px 20px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    color: #000;
-    display: inline-block;
-    font-size: 18px;
-    background-color: #87cefa;
-  }
-  .wrapper .contents-list table {
+  .wrapper .contents table {
     margin: 16px auto 0;
   }
-  .wrapper .contents-list table th {
+  .wrapper .contents table th {
     padding: 5px;
   }
-  .wrapper .contents-list table td {
+  .wrapper .contents table td {
     padding: 5px;
   }
-  .wrapper .contents-list table td .edit {
+  .wrapper .contents table td .edit {
     color: blue;
   }
-  .wrapper .contents-list table td .delete {
+  .wrapper .contents table td .delete {
     color: red;
   }
   .wrapper .contents-each-box {
