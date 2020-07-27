@@ -44,23 +44,36 @@ a{
           background-color: #87cefa;
         }
       }
-      table{
-        margin: 16px auto 0;
-        th{
-          padding: 5px;
-          text-align: center;
-        }
-        td{
-          padding: 5px;
+      .table{
+        overflow: scroll;
+        table{
+          width: 737px;
+          margin: 16px auto 0;
+          th{
+            padding: 5px;
+            text-align: center;
+          }
+          td{
+            width: 94px;
+            padding: 5px;
+            .name{
+              width: 169px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          .value{
+            text-align: right;
+          }
           .edit{
+            width: 43px;
             color: blue;
           }
           .delete{
+            width: 43px;
             color: red;
           }
-        }
-        .value{
-          text-align: right;
         }
       }
     }
@@ -117,22 +130,7 @@ a{
       &-list{
         margin-top: 36px;
         }
-        table{
-          margin: 16px auto 0;
-          th{
-            padding: 5px;
-          }
-          td{
-            padding: 5px;
-            .edit{
-              color: blue;
-            }
-            .delete{
-              color: red;
-            }
-          }
-        }
-      &-each{
+        &-each{
         &-box{
           width: 100%;
           .content{

@@ -292,29 +292,44 @@ a {
   background-color: #87cefa;
 }
 
-.wrapper .contents-list table {
+.wrapper .contents-list .table {
+  overflow: scroll;
+}
+
+.wrapper .contents-list .table table {
+  width: 737px;
   margin: 16px auto 0;
 }
 
-.wrapper .contents-list table th {
+.wrapper .contents-list .table table th {
   padding: 5px;
   text-align: center;
 }
 
-.wrapper .contents-list table td {
+.wrapper .contents-list .table table td {
+  width: 94px;
   padding: 5px;
 }
 
-.wrapper .contents-list table td .edit {
+.wrapper .contents-list .table table td .name {
+  width: 169px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrapper .contents-list .table table .value {
+  text-align: right;
+}
+
+.wrapper .contents-list .table table .edit {
+  width: 43px;
   color: blue;
 }
 
-.wrapper .contents-list table td .delete {
+.wrapper .contents-list .table table .delete {
+  width: 43px;
   color: red;
-}
-
-.wrapper .contents-list table .value {
-  text-align: right;
 }
 
 .wrapper .contents-each {
@@ -373,21 +388,6 @@ a {
   }
   .wrapper .contents-list {
     margin-top: 36px;
-  }
-  .wrapper .contents table {
-    margin: 16px auto 0;
-  }
-  .wrapper .contents table th {
-    padding: 5px;
-  }
-  .wrapper .contents table td {
-    padding: 5px;
-  }
-  .wrapper .contents table td .edit {
-    color: blue;
-  }
-  .wrapper .contents table td .delete {
-    color: red;
   }
   .wrapper .contents-each-box {
     width: 100%;
