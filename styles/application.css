@@ -293,7 +293,8 @@ a {
 }
 
 .wrapper .contents-list .table {
-  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .wrapper .contents-list .table table {

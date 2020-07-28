@@ -45,7 +45,8 @@ a{
         }
       }
       .table{
-        overflow: scroll;
+        overflow-x: auto;
+        overflow-y: hidden;
         table{
           width: 737px;
           margin: 16px auto 0;
