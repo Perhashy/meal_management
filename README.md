@@ -8,6 +8,7 @@ https://meal-management-app.herokuapp.com
 そして、各項目の合計も一覧ページで一目で分かります。
 <img width="1437" alt="食事管理アプリ-index1" src="https://user-images.githubusercontent.com/61175442/89306567-029fcc00-d6ab-11ea-9e95-1e6d46e45908.png">
 <img width="1434" alt="食事管理アプリ-index2" src="https://user-images.githubusercontent.com/61175442/89307033-91ace400-d6ab-11ea-96f1-38e3a765f4c1.png">
+上部で日付を選択しすると、選択した日付の投稿内容を確認できます。
 
 
 
