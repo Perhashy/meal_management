@@ -1,5 +1,9 @@
 # 食事管理アプリ（仮
-https://meal-management-app.herokuapp.com
+https://meal-management-app.herokuapp.com  
+・テスト用アカウント
+メールアドレス：test@gmail
+パスワード：testtest
+
 # 概要
 このアプリは日々の摂取カロリーやたんぱく質の量など気にしている方のためのwebサイトです。  
 ダイエット、糖質制限をしている方など健康志向の方におすすめです！
