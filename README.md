@@ -6,7 +6,8 @@ https://meal-management-app.herokuapp.com
 # 機能
 その日に食べた物のカロリー、脂質など細かく保存することが出来ます。   
 そして、各項目の合計も一覧ページで一目で分かります。
-![Uploading 食事管理アプリ-index1.png…]()
+<img width="1437" alt="食事管理アプリ-index1" src="https://user-images.githubusercontent.com/61175442/89306567-029fcc00-d6ab-11ea-9e95-1e6d46e45908.png">
+
 
 
 # 開発環境
