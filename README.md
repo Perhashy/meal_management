@@ -14,7 +14,8 @@ https://meal-management-app.herokuapp.com
 <img width="1434" alt="食事管理アプリ-index2" src="https://user-images.githubusercontent.com/61175442/89307033-91ace400-d6ab-11ea-96f1-38e3a765f4c1.png">  
 ・上部で日付を選択しすると、選択した日付の投稿内容を確認できます。
 <img width="583" alt="食事管理アプリ-index3" src="https://user-images.githubusercontent.com/61175442/89307614-40e9bb00-d6ac-11ea-9913-0ff3dd837521.png">  
-・投稿、編集はそれぞれ日付の指定・変更ができるため、過去の食事も投稿可能
+・投稿、編集はそれぞれ日付の指定・変更ができるため、過去の食事も投稿可能  
+※カロリーは整数のみ、それ以外は小数第１位まで入力可能  
 <img width="775" alt="食事管理アプリ-create" src="https://user-images.githubusercontent.com/61175442/89307861-8a3a0a80-d6ac-11ea-9274-049f90ca1d8b.png">
 
 
