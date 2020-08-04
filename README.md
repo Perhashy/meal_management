@@ -6,6 +6,8 @@ https://meal-management-app.herokuapp.com
 # 機能
 その日に食べた物のカロリー、脂質など細かく保存することが出来ます。   
 そして、各項目の合計も一覧ページで一目で分かります。
+![Uploading 食事管理アプリ-index1.png…]()
+
 
 # 開発環境
 * PHP
