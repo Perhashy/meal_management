@@ -1,8 +1,9 @@
 # 食事管理アプリ（仮
 https://meal-management-app.herokuapp.com  
 ・テスト用アカウント  
-メールアドレス：test@gmail  
-パスワード：testtest  
+  メールアドレス：test@gmail  
+  パスワード：testtest  
+※2020/8/4を選択してもらうと、仮投稿内容が確認できます。  
 
 # 概要
 このアプリは日々の摂取カロリーやたんぱく質の量など気にしている方のためのwebサイトです。  
